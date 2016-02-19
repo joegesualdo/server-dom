@@ -11,6 +11,7 @@ $ npm install --save server-dom
 ```
 var document = require("server-dom").document
 el = document.createElement('div');
+el.className = "class_one"
 el.classList.add("class_two")
 
 console.log(el.outerHTML) //=> <div class="class_one class_two"></div>
