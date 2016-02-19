@@ -20,7 +20,6 @@ function ClassList(elem) {
     function add(token) {
         var list = getTokens()
         if (list.indexOf(token) > -1) {
-        // if (indexof(list, token) > -1) {
             return
         }
         list.push(token)
@@ -29,7 +28,7 @@ function ClassList(elem) {
 
     function remove(token) {
         var list = getTokens()
-            , index = indexof(list, token)
+            , index = list.indexOf(token)
 
         if (index === -1) {
             return
@@ -40,7 +39,7 @@ function ClassList(elem) {
     }
 
     function contains(token) {
-        return indexof(getTokens(), token) > -1
+        return getTokens().indexOf(token) > -1
     }
 
     function toggle(token) {
