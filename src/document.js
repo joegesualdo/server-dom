@@ -1,9 +1,8 @@
-var Element = require("./element.js");
-var Comment = require("./comment.js");
-var Text = require("./text.js");
+var Element = require(__dirname + '/element.js');
+var Comment = require(__dirname + '/comment.js');
+var Text = require(__dirname + '/text.js');
 
-function Document(){
-}
+function Document(){}
 
 Document.prototype.createTextNode = function(data) {
   var textNode = new Text();

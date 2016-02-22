@@ -1,8 +1,8 @@
-var Document = require("./document.js");
-var Node = require("./node.js");
-var Element = require("./element.js");
-var Comment = require("./comment.js");
-var Text = require("./text.js");
+var Document = require(__dirname + '/document.js');
+var Node = require(__dirnmae + '/node.js');
+var Element = require(__dirname + '/element.js');
+var Comment = require(__dirname + '/comment.js');
+var Text = require(__dirname + '/text.js');
 
 module.exports = {
   Node: Node,

@@ -1,4 +1,3 @@
-function Node(){
-}
+function Node(){}
 
 module.exports = Node
